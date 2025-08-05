@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="orderDetail.css" />
+    <title>Chauhan Bakery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <i class="fa fa-bars"></i> Menu
+          </button>
+          <a href="index.html" class="home-logo">
+            <i class="fa fa-birthday-cake"></i>
+            <b class="logo-name">Chauhan Bakery</b>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="tel:+919798107150"
+                ><span class="glyphicon glyphicon-phone"></span>9798107150</a
+              >
+            </li>
+            <li class=""><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container form-container">
+      <form
+        class="well form-horizontal"
+        name="booking"
+        onsubmit="doBooking(event)"
+        class="well form-horizontal"
+        id="contact_form"
+      >
+        <div class="row">
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-user"></i
+              ></span>
+              <input
+                name="first_name"
+                placeholder="First Name"
+                required
+                class="form-control"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-user"></i
+              ></span>
+              <input
+                name="last_name"
+                placeholder="Last Name"
+                required
+                class="form-control"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-envelope"></i
+              ></span>
+              <input
+                name="email"
+                placeholder="E-Mail Address"
+                class="form-control"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-earphone"></i
+              ></span>
+              <input
+                name="phone"
+                placeholder="9798107150"
+                pattern="[0-9]{10}"
+                required
+                class="form-control"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-home"></i
+              ></span>
+              <input
+                name="address"
+                placeholder="Address"
+                required
+                class="form-control"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-home"></i
+              ></span>
+              <input
+                readonly
+                name="city"
+                placeholder="city"
+                value="Patna"
+                class="form-control"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-list"></i
+              ></span>
+              <select
+                readonly
+                title="States"
+                id="state_dd"
+                class="selectpicker form-control"
+                name="state"
+              >
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh</option>
+                <option>Assam</option>
+                <option selected>Bihar</option>
+                <option>Chhattisgarh</option>
+                <option>Goa</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Himachal Pradesh</option>
+                <option>Jharkhand</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Manipur</option>
+                <option>Meghalaya</option>
+                <option>Mizoram</option>
+                <option>Nagaland</option>
+                <option>Odisha</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Sikkim</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Tripura</option>
+                <option>Uttar Pradesh</option>
+                <option>Uttarakhand</option>
+                <option>West Benga</option>
+                <option>Odisha</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-home"></i>
+              </span>
+              <select
+                name="pin"
+                title="PIN Code"
+                class="selectpicker form-control"
+                required
+              >
+                <option value="800002">800002</option>
+                <option value="801505" selected>801505</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-time"></i
+              ></span>
+              <input
+                name="date"
+                id="date"
+                placeholder="Date"
+                required
+                class="form-control"
+                type="date"
+              />
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-xs-12 col-md-6 col-lg-6 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-time"></i
+              ></span>
+              <select
+                title="Time slot"
+                id="time"
+                class="selectpicker form-control"
+                name="time"
+              >
+                <option>11:00 a.m to 12:00 p.m</option>
+                <option>12:00 p.m to 01:00 p.m</option>
+                <option>01:00 p.m to 02:00 p.m</option>
+                <option>02:00 p.m to 03:00 p.m</option>
+                <option>03:00 p.m to 04:00 p.m</option>
+                <option>04:00 p.m to 05:00 p.m</option>
+                <option>05:00 p.m to 06:00 p.m</option>
+                <option>06:00 p.m to 07:00 p.m</option>
+                <option>07:00 p.m to 08:00 p.m</option>
+                <option>08:00 p.m to 09:00 p.m</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-xs-12 col-md-12 col-lg-12 inputGroupContainer column"
+          >
+            <div class="input-group">
+              <span class="input-group-addon"
+                ><i class="glyphicon glyphicon-pencil"></i
+              ></span>
+              <textarea
+                class="form-control"
+                name="comment"
+                required
+                placeholder="Special Instructions (maximum 100 characters)"
+                maxlength="100"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <h3><u>Product List</u></h3>
+        <hr />
+        <div class="product-container row" id="cartItems">
+          <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="product col-sm-12">
+                <div class="product-details-section row">
+                  <div class="col-lg-3 col-md-3 thumbnail">
+                    <img
+                      src="images/products-images/air-conditioner_image.jpg"
+                      alt="A/C"
+                    />
+                  </div>
+                  <p class="col-lg-9 col-md-7 description itemName">
+                    Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC
+                    (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM
+                    0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model,
+                    White)
+                  </p>
+                </div>
+                <div class="product-pricing-section row">
+                  <div class="col-lg-12">
+                    <div class="price">
+                      <span class="left-panel">
+                        <span class="item-price">Rs.35,000</span
+                        ><span class="multiply">&times;</span>
+                        <input
+                          type="number"
+                          name="quantity"
+                          class="form-control border-dark-subtle input-number num"
+                          value="1"
+                          min="0"
+                          max="999"
+                          onchange="validateQty(this, 1)"
+                        />
+                      </span>
+                      <span>
+                        <span class="total-price">Rs.35,000.</span>
+                        <a
+                          class="btn-sm btn-delete"
+                          onclick="removeFromCart(1)"
+                        >
+                          <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="product col-sm-12">
+                <div class="product-details-section row">
+                  <div class="col-lg-3 col-md-3 thumbnail">
+                    <img
+                      src="images/products-images/air-conditioner_image.jpg"
+                      alt="A/C"
+                    />
+                  </div>
+                  <p class="col-lg-9 col-md-7 description itemName">
+                    Panasonic 1.5 Ton 3 Star Wi-Fi Inverter Smart Split AC
+                    (Copper Condenser, 7 in 1 Convertible with True AI Mode, PM
+                    0.1 Air Purification Filter, CS/CU-SU18ZKYWT, 2024 Model,
+                    White)
+                  </p>
+                </div>
+                <div class="product-pricing-section row">
+                  <div class="col-lg-12">
+                    <div class="price">
+                      <span class="left-panel">
+                        <span class="item-price">Rs.35,000</span
+                        ><span class="multiply">&times;</span>
+                        <input
+                          type="number"
+                          name="quantity"
+                          class="form-control border-dark-subtle input-number num"
+                          value="1"
+                          min="0"
+                          max="999"
+                          onchange="validateQty(this, 1)"
+                        />
+                      </span>
+                      <span>
+                        <span class="total-price">Rs.35,000.</span>
+                        <a
+                          class="btn-sm btn-delete"
+                          onclick="removeFromCart(1)"
+                        >
+                          <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+        </div>
+
+        <div class="total_price">
+          <p class="total-amt" id="total-amt"></p>
+        </div>
+        <button
+          type="submit"
+          value="Submit"
+          class="btn btn-success btn-book-service"
+        >
+          Submit <span class="glyphicon glyphicon-send"></span>
+        </button>
+        <button
+          type="button"
+          value="Clear"
+          class="btn btn-danger"
+          onclick="clearCart()"
+        >
+          Clear <span class="glyphicon glyphicon-trash color-white"></span>
+        </button>
+      </form>
+    </div>
+
+    <script src="orderDetail.js"></script>
+    <footer class="bg-body-tertiary text-center">
+      <div class="container">
+        <section class="mb-4">
+          <p class="text-black">
+            "Chauhan Bakery offers a delicious selection of freshly baked cakes,
+            pastries, and desserts, right at your fingertips. You can easily
+            order your favorite treats and have them delivered to your doorstep
+            for any occasion!"
+          </p>
+        </section>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Visit Us Section -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h4>Visit Us</h4>
+            <p><strong>Address:</strong></p>
+            <p>J.N. Tiwari Market, Barhampur Road, 1st Devi Asthan</p>
+            <p>Buer Akadha, Phulwari Sharif, Patna, Bihar 801505</p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+918789413875">8789413875</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:hello@sweetdelights.com"
+                >hello@sweetdelights.com</a
+              >
+            </p>
+          </div>
+          <!-- Add Image of Shop Location -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14396.790356997935!2d85.08618012046745!3d25.5650922564271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a83d65c0df7d%3A0x33b70235bc41a4ce!2sChauhan&#39;s%20Bakery%20Corner!5e0!3m2!1sen!2sin!4v1739463877831!5m2!1sen!2sin"
+              width="100%"
+              height="300px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Business Hours Section -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h4>Business Hours</h4>
+            <p><strong>Monday - Saturday:</strong>09:00 AM - 11:00 PM</p>
+            <p><strong>Sunday:</strong>09:00 AM - 11:00 PM</p>
+          </div>
+          <!-- Optional: Add a Map or Social Media Links -->
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h4>Follow Us</h4>
+            <p>Stay connected with us on social media:</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/1BdmW6QieN/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/chauhan_bakery_official?igsh=OGUycDQzcHhiNnNr"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark text-white py-3 rights_section">
+        <div class="row">
+          <div class="col-md-12 text-start">
+            <p class="mb-0">&copy; 2023 Chauhan Bakery. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-12 text-end">
+            <p class="mb-0">
+              <strong>Developed by</strong> "Aman Kumar"
+              <a href="mailto:kgfs.consultant@gmail.com">kgfs.consultant@gmail.com</a>
+              | Contact:
+              <a href="tel:+919798107150">+91 9798107150</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

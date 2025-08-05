@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "cakes",
+        "description": ""
+    },
+    {
+        "id": 2,
+        "name": "cookies",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "name": "pizza",
+        "description": ""
+    },
+    {
+        "id": 4,
+        "name": "donut",
+        "description": ""
+    },
+    {
+        "id": 5,
+        "name": "snacks",
+        "description": ""
+    },
+    {
+        "id": 4,
+        "name": "bun",
+        "description": ""
+    },{
+        "id": 4,
+        "name": "bevarage",
+        "description": ""
+    }
+
+]

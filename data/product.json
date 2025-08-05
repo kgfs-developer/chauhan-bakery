@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "name": "Cake",
+        "img": "images/products-images/cakes/yummy-pineapple_cake.png",
+        "rating": 5,
+        "description": "Sweet and tangy pineapple cake.",
+        "price": 499,
+        "unit":"",
+        "discount": "22%",
+        "categories": [0,1]
+    },
+    {
+        "id": 2,
+        "name": "Cake",
+        "img": "images/products-images/cakes/anniversary-black-forest_cake.png",
+        "rating": 4,
+        "description": "Dreamy pink cake with fresh strawberry flavor.",
+        "price": 599,
+        "unit":"",
+        "discount": "12%",
+        "categories": [0,1]
+    },
+    {
+        "id": 3,
+        "name": "Cake",
+        "img": "images/products-images/cakes/brownie-truffle_cake.png",
+        "rating": 5,
+        "description": "Rich and decadent brownie truffle cake.",
+        "price": 499,
+        "unit":"",
+        "discount": "10%",
+        "categories": [0,1]
+    },
+    {
+        "id": 4,
+        "name": "Cake",
+        "img": "images/products-images/cakes/chocoChip-muddy_cake.png",
+        "rating": 5,
+        "description": "Choco chip muddy cake with gooey chocolate delight.",
+        "price": 449,
+        "unit":"",
+        "discount": "8.5%",
+        "categories": [0,1]
+    },
+    {
+        "id": 5,
+        "name": "Cake",
+        "img": "images/products-images/cakes/delectableChocolate_cake.png",
+        "rating": 4,
+        "description": "Delectable chocolate cake with a melt-in-your-mouth richness.",
+        "price": 649,
+        "unit":"",
+        "discount": "5%",
+        "categories": [0,1]
+    },
+    {
+        "id": 6,
+        "name": "Cake",
+        "img": "images/products-images/cakes/delightChoco-vanilla_cake.png",
+        "rating": 4,
+        "description": "Delightful choco-vanilla cake with a perfect blend of flavors.",
+        "price": 349,
+        "unit":"",
+        "discount": "10%",
+        "categories": [0,1]
+    },
+    {
+        "id": 7,
+        "name": "Cake",
+        "img": "images/products-images/cakes/deliciousChocolate_cake.png",
+        "rating": 5,
+        "description": "Delectable chocolate cake with a melt-in-your-mouth richness.",
+        "price": 499,
+        "unit":"",
+        "discount": "17%",
+        "categories": [0,1]
+    },
+    {
+        "id": 8,
+        "name": "Cake",
+        "img": "images/products-images/cakes/fantasticChocolate_cake.png",
+        "rating": 5,
+        "description": "Fantastic chocolate cake with an irresistible cocoa kick.",
+        "price": 599,
+        "unit":"",
+        "discount": "24%",
+        "categories": [0,1]
+    },
+    {
+        "id": 9,
+        "name": "Cake",
+        "img": "images/products-images/cakes/toothsome-chocolate_cake.png",
+        "rating": 5,
+        "description": "Toothsome chocolate cake with a rich, indulgent flavor.",
+        "price": 649,
+        "unit":"",
+        "discount": "18%",
+        "categories": [0,1]
+    },
+    {
+        "id": 10,
+        "name": "Cake",
+        "img": "images/products-images/cakes/fudgeBrownie_cake.png",
+        "rating": 4,
+        "description": "Fudgy brownie cake with a deeply chocolatey center.",
+        "price": 499,
+        "unit":"",
+        "discount": "10%",
+        "categories": [0,1]
+    },
+    {
+        "id": 11,
+        "name": "Cake",
+        "img": "images/products-images/cakes/heartfeltVanilla_cake.png",
+        "rating": 5,
+        "description": "Heartfelt vanilla cake with a soft, comforting sweetness.",
+        "price": 649,
+        "unit":"",
+        "discount": "18%",
+        "categories": [0,1]
+    },
+    {
+        "id": 12,
+        "name": "Cake",
+        "img": "images/products-images/cakes/butterscotch_cake.png",
+        "rating": 5,
+        "description": "Butterscotch cake with a luscious, caramel-like richness.",
+        "price": 549,
+        "unit":"",
+        "discount": "18%",
+        "categories": [0,1]
+    },
+    {
+        "id": 13,
+        "name": "Cookie",
+        "img": "images/products-images/cookies/cookies.png",
+        "rating": 5,
+        "description": "Butterscotch cake with a luscious, caramel-like richness.",
+        "price": 300,
+        "unit": "/kg",
+        "discount": "18%",
+        "categories": [0,2]
+    }
+]

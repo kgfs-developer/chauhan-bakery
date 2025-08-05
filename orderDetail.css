@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(253 242 248);
+    font-family: cursive;
+}
+
+.form-horizontal {
+    background-color: white;
+    margin-left: auto;
+}
+
+.form-container {
+    margin-top: 70px;
+}
+
+.column {
+    margin-bottom: 4px;
+}
+
+/* .side-panel-body{
+    width: 50%;
+} */
+
+h3 {
+    text-align: center;
+}
+
+.num {
+    width: 56px;
+    height: 21px;
+    text-align: center;
+    display: inline;
+    padding: 0;
+}
+
+.product {
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    /* margin-left: 5px; */
+}
+
+
+.total_price {
+    text-align: end;
+    font-size: large;
+    font-weight: 500;
+}
+
+.btn-book-order {
+    /* width: 100%; */
+    text-align: center;
+}
+
+.description {
+    font-size: small;
+}
+
+.price {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 12px;
+}
+
+.thumbnail>img {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    
+}
+
+.itemName{
+    color: deeppink;
+    font-weight: 700;
+}
+.multiply {
+    font-size: larger;
+}
+
+.glyphicon-trash {
+    color: red;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.color-white {
+    color: white;
+}
+
+.btn-book-service {
+    float: right;
+}

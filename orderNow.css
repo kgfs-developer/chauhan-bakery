@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(253 242 248);
+    font-family: cursive;
+  }
+
+@media screen and (min-width: 768px) {
+    .btn-book-service {
+        float: right;
+    }
+}
+
+fieldset {
+    margin-top: 30px;
+}
+
+.row>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
+}
+
+div [class*='col-'] {
+    margin-top: 4px !important;
+}
+
+.img-responsive {
+    border-radius: 16px;
+}
+
+.service-price {
+    float: right;
+}
+
+#service-items input[type=checkbox] {
+    margin-right: 4px;
+}
+
+.form-container {
+    margin-top: 5vh;
+}
+
+.name-deepPink{
+    color: deeppink;
+}

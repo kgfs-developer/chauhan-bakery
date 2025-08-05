@@ -1,0 +1,45 @@
+.glyphicon-phone {
+    font-size: 19px;
+}
+
+.navbar-toggle {
+    background-color: hotpink;
+    color: white;
+}
+
+.navbar-inverse {
+    background-color: white;
+    border: none;
+
+    .navbar-nav>li>a {
+        color: gray;
+        font-family: cursive;
+        /* font-weight: 500; */
+        font-size: medium;
+
+        &:hover {
+            color: hotpink;
+        }
+    }
+}
+
+.logo-name {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+
+    &:hover {
+        color: hotpink;
+    }
+}
+
+a.home-logo{
+    text-decoration: none;
+}
+
+.fa-birthday-cake {
+    color: hotpink;
+    font-size: 28px;
+    margin: 12px;
+}

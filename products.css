@@ -1,0 +1,274 @@
+body {
+  background-color: rgb(253 242 248);
+  font-family: cursive;
+}
+
+.container-product {
+  padding-top: 60px;
+  padding-bottom: 6px;
+}
+
+body {
+  background-color: rgb(253 242 248);
+}
+
+h1 {
+  margin-top: 1vh;
+  text-align: center;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  height: -webkit-fill-available;
+  height: 100%;
+  margin-bottom: 0;
+  background: transparent;
+  border: none;
+  background: rgb(255 255 255);
+
+  .button-area {
+    display: inline-flex;
+  }
+
+  ul {
+    margin-bottom: 42px;
+  }
+
+  img {
+    border-radius: 16px;
+    width: -webkit-fill-available;
+  }
+
+  .fa-star {
+    color: white;
+    text-shadow: 0 0 2px goldenrod;
+  }
+
+  .name-deeppink {
+    color: deeppink;
+  }
+}
+
+.button-area {
+  display: none;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  margin: 0 20px 4px 19px;
+  justify-content: space-evenly;
+
+  .btn-default {
+    color: #fff;
+    background-color: hotpink;
+    border-color: hotpink;
+    border-radius: 9999px;
+
+    &:hover {
+      background-color: deeppink;
+    }
+  }
+}
+
+.category-buttons {
+  justify-content: center;
+  margin-top: 1vh;
+
+  .category-button {
+    margin: 4px 6px;
+  }
+
+  .btn-group-md {
+    color: white;
+    background-color: hotpink;
+    border-radius: 9999px;
+
+    &:hover {
+      background-color: deeppink;
+    }
+  }
+}
+
+.product-block {
+  margin-top: 40px !important;
+}
+
+/* side panel */
+
+.description {
+  font-size: small;
+}
+
+.input-number {
+  width: 65px;
+}
+
+.price {
+  display: contents;
+
+  i {
+    padding-right: 8px;
+  }
+}
+
+.item-description {
+  margin-bottom: 42px;
+}
+
+.container-product {
+  min-height: calc(100vh - 100px);
+}
+
+.side-panel {
+  width: 300px;
+  right: -300px;
+  position: fixed;
+  z-index: 1;
+  height: -webkit-fill-available;
+  height: 100%;
+  top: 0;
+  background-color: #f8f8f8;
+  transition: 0.5s;
+
+}
+
+.side-panel-header {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  .total-amt {
+    text-align: left;
+    font-size: large;
+  }
+}
+
+.side-panel-body {
+  overflow-y: auto;
+  height: calc(100% - 120px);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #9d9d9d;
+  padding-top: 11px;
+  border: none;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+
+  .badge {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}
+
+.openbtn:hover {
+  color: hotpink;
+}
+
+.glyphicon-circle-arrow-right {
+  color: floralwhite;
+  font-size: 25px;
+  float: right;
+
+  &:hover {
+    color: lightgray;
+  }
+}
+
+.nav-open {
+  right: 0;
+}
+
+.num {
+  height: 24px;
+  height: 16px;
+  padding: 0;
+  width: 42px;
+  text-align: center;
+}
+
+.btn-delete {
+  height: 24px;
+  padding: 0 2px;
+  margin-left: 8px;
+  color: red;
+}
+
+.multiply {
+  margin: -4px 8px;
+  color: darkgray;
+  font-size: large;
+}
+
+.price {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+.left-panel {
+  display: inline-flex;
+}
+
+.product {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+.side-panel-body {
+  padding: 0 4px;
+  ;
+}
+
+.product-container {
+  padding: 5px 0;
+}
+
+.rating {
+  text-align: left;
+
+  .checked {
+    color: gold;
+  }
+}
+
+.float-bottom {
+  width: -webkit-fill-available;
+  margin: 0 6px;
+}
+
+.btn-in-cart_block {
+  background-color: black;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+.name-deepPink{
+  color: deeppink;
+}
