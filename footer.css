@@ -1,0 +1,29 @@
+
+footer {
+    background-color: whitesmoke;
+    color: black;
+    padding: 40px 0;
+    margin-top: 3vh;
+  }
+  footer h4 {
+    color: black;
+    margin-bottom: 2vh;
+    font-size: 5vh;
+  }
+  footer p {
+    margin: 5px 0;
+    color: black;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: hotpink;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: deeppink;
+  }
+
+  .rights_section{
+    margin-top: 6vh;
+  }
